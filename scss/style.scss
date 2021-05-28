@@ -59,6 +59,9 @@ ul {
 .container {
     width: 80%;
     margin: auto;
+    @media(max-width: 768px) {
+        width: 95%;
+    }
 }
 
 
@@ -72,6 +75,9 @@ ul {
     .container {
         @include flexCenter;
         justify-content: space-between;
+        @media(max-width: 768px) {
+            flex-direction: column;
+        }
         .logo {
             font-size: 2rem;
             color: $accents;
@@ -86,6 +92,9 @@ ul {
                 color: $white;
                 font-size: 1.5rem;
                 margin-left: 20px;
+                @media(max-width: 768px) {
+                    margin: 10px;
+                }
                 &:hover {
                     color: $accents;
                 }
@@ -105,9 +114,15 @@ nav {
         justify-content: center;
         li {
             margin: 10px;
+            @media(max-width: 768px) {
+                margin: 5px;
+            }
             a {
                 color: $tertiary;
                 font-size: 1.2rem;
+                @media(max-width: 768px) {
+                    font-size: 0.9rem;
+                }
                 &:hover {
                     color: $secondary;
                 }
@@ -133,9 +148,16 @@ header {
         border: 1px solid $gray;
         color: $white;
         text-align: center;
+        @media(max-width: 768px) {
+            margin: 20px;
+            padding: 20px;
+        }
         h1 {
             font-size: 3rem;
             text-shadow: $textShadow;
+            @media(max-width: 768px) {
+                font-size: 2rem;
+            }
         }
         h4 {
             font-weight: 300;
@@ -163,6 +185,9 @@ header {
     h2 {
         font-size: 3rem;
         text-shadow: $textShadow;
+        @media(max-width: 768px) {
+            font-size: 2rem;
+        }
     }
     p {
         text-shadow: $textShadow;
@@ -180,6 +205,9 @@ header {
     article {
         flex: 1;
         background: linear-gradient(to right, $accents, $gray);
+        @media(max-width: 768px) {
+            flex: 0 0 50%;
+        }
         img {
             width: 100%;
         }
@@ -212,6 +240,9 @@ header {
     article {
         flex: 0 0 50%;
         background: $gray;
+        @media(max-width: 768px) {
+            flex: 0 0 100%;
+        }
     }
     article:nth-child(1),
     article:nth-child(4) {
@@ -219,12 +250,18 @@ header {
         flex-direction: column;
         padding: 50px;
         justify-content: center;
+        @media(max-width: 768px) {
+            padding: 20px;
+        }
     }
     article:nth-child(2) {
         background-image: url(../img/benefiti1.jpg);
         background-position: center;
         background-size: cover;
         height: 56vh;
+        @media(max-width: 768px) {
+            order: -1;
+        }
     }
     article:nth-child(3) {
         background-image: url(../img/benefiti2.jpg);
@@ -245,6 +282,9 @@ footer {
     background-size: cover;
     text-align: center;
     padding: 200px 0;
+    @media(max-width: 768px) {
+        padding: 100px 0;
+    }
     h3 {
         font-size: 2rem;
         margin-bottom: 20px;
@@ -254,6 +294,10 @@ footer {
     }
     input {
         padding: 15px;
+        @media(max-width: 768px) {
+            width: 100%;
+            margin-bottom: 20px;
+        }
     }
     input[type="submit"] {
         @include btn;
