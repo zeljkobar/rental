@@ -129,7 +129,7 @@ header {
     @include flexCenter;
     .box {
         background: rgba($secondary, .7);
-        padding: 40px;
+        padding: 4 0px;
         border: 1px solid $gray;
         color: $white;
         text-align: center;
@@ -231,5 +231,38 @@ header {
         background-position: center;
         background-size: cover;
         height: 56vh;
+    }
+}
+
+
+/******************
+      footer
+******************/
+
+footer {
+    background-image: linear-gradient(rgba($accents, .85), rgba($accents, .85)), url(../img/footer.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding: 200px 0;
+    h3 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+    input {
+        padding: 15px;
+    }
+    input[type="submit"] {
+        @include btn;
+        background: $primary;
+        color: $white;
+        position: relative;
+        top: 2px;
+        &:hover {
+            background: $secondary;
+        }
     }
 }

@@ -91,7 +91,7 @@ header {
 }
 header .box {
   background: rgba(39, 174, 96, 0.7);
-  padding: 40px;
+  padding: 4 0px;
   border: 1px solid #e9ecef;
   color: #fff;
   text-align: center;
@@ -199,6 +199,49 @@ header .box button:hover {
   background-position: center;
   background-size: cover;
   height: 56vh;
+}
+
+/******************
+      footer
+******************/
+footer {
+  background-image: linear-gradient(rgba(241, 196, 15, 0.85), rgba(241, 196, 15, 0.85)), url(../img/footer.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 200px 0;
+}
+footer h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+footer p {
+  margin-bottom: 20px;
+}
+footer input {
+  padding: 15px;
+}
+footer input[type=submit] {
+  padding: 15px;
+  border: none;
+  background: #f1c40f;
+  font-size: 1rem;
+  margin-top: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: #2c3e50;
+  color: #fff;
+  position: relative;
+  top: 2px;
+}
+footer input[type=submit]:hover {
+  background: #2c3e50;
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: #fff;
+}
+footer input[type=submit]:hover {
+  background: #27ae60;
 }
 
 /*# sourceMappingURL=style.css.map */
